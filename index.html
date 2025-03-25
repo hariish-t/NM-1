@@ -3,41 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Monitoring Dashboard</title>
+    <title>Website Monitoring System</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="dashboard">
-        <h1>Website Monitoring Dashboard</h1>
 
-        <!-- Website Input Section -->
-        <div class="input-container">
-            <input type="text" id="website-url" placeholder="Enter Website URL">
+    <div class="container">
+        <h1>Website Monitoring Dashboard</h1>
+        
+        <div class="input-section">
+            <label for="website-url">Enter Website URL:</label>
+            <input type="text" id="website-url" placeholder="https://example.com">
             <button onclick="startMonitoring()">Start Monitoring</button>
         </div>
-        <div class="metrics-container">
-    <h2>Page Visit Metrics</h2>
-    <p>Total Page Views: <span id="total-views">0</span></p>
-    <p>Visits Today: <span id="today-visits">0</span></p>
-    <p>Visits This Week: <span id="weekly-visits">0</span></p>
-    <p>Visits This Month: <span id="monthly-visits">0</span></p>
-</div>
 
-
-        <div class="status-container">
-            <h2>Website Status: <span id="status">Not Checked</span></h2>
-            <h3>Response Time: <span id="response-time">0 ms</span></h3>
+        <div class="status-section">
+            <p>Status: <span id="status">N/A</span></p>
+            <p>Response Time: <span id="response-time">N/A</span></p>
+            <p>Uptime Percentage: <span id="uptime">0%</span></p>
         </div>
 
-        <canvas id="responseChart"></canvas>
-
-        <div class="uptime-container">
-            <h3>Uptime Percentage: <span id="uptime">N/A</span></h3>
+        <div class="chart-container">
+            <h3>Response Time Chart</h3>
+            <canvas id="responseChart"></canvas>
         </div>
 
-        <div class="incidents">
-            <h3>Recent Incidents</h3>
+        <div class="log-section">
+            <h3>Incident Log</h3>
             <ul id="incident-log"></ul>
         </div>
     </div>
