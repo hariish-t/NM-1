@@ -11,15 +11,21 @@
     <div class="dashboard">
         <h1>Website Monitoring Dashboard</h1>
 
+        <!-- Website Input Section -->
+        <div class="input-container">
+            <input type="text" id="website-url" placeholder="Enter Website URL">
+            <button onclick="startMonitoring()">Start Monitoring</button>
+        </div>
+
         <div class="status-container">
-            <h2>Website Status: <span id="status">Checking...</span></h2>
+            <h2>Website Status: <span id="status">Not Checked</span></h2>
             <h3>Response Time: <span id="response-time">0 ms</span></h3>
         </div>
 
         <canvas id="responseChart"></canvas>
 
         <div class="uptime-container">
-            <h3>Uptime Percentage: <span id="uptime">Loading...</span></h3>
+            <h3>Uptime Percentage: <span id="uptime">N/A</span></h3>
         </div>
 
         <div class="incidents">
