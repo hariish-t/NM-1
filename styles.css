@@ -4,6 +4,22 @@ body {
     background: #f4f4f4;
     padding: 20px;
 }
+.metrics-container {
+    margin-top: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.metrics-container h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+.metrics-container p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
 
 .dashboard {
     background: white;
