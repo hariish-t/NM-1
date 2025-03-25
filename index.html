@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Monitoring System</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Website Monitoring Dashboard</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-
     <div class="container">
         <h1>Website Monitoring Dashboard</h1>
-        
+
         <div class="input-section">
             <label for="website-url">Enter Website URL:</label>
             <input type="text" id="website-url" placeholder="https://example.com">
-            <button onclick="startMonitoring()">Start Monitoring</button>
+            <button id="start-btn">Start Monitoring</button>
         </div>
 
         <div class="status-section">
