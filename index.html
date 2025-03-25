@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Monitoring Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Website Monitoring Dashboard</h1>
+
+        <div class="status-container">
+            <h2>Website Status: <span id="status">Checking...</span></h2>
+            <h3>Response Time: <span id="response-time">0 ms</span></h3>
+        </div>
+
+        <canvas id="responseChart"></canvas>
+
+        <div class="uptime-container">
+            <h3>Uptime Percentage: <span id="uptime">Loading...</span></h3>
+        </div>
+
+        <div class="incidents">
+            <h3>Recent Incidents</h3>
+            <ul id="incident-log"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
