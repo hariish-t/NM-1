@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.dashboard {
+    background: white;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.status-container {
+    margin-bottom: 20px;
+}
+
+canvas {
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.uptime-container, .incidents {
+    margin-top: 20px;
+}
+
+#incident-log {
+    list-style: none;
+    padding: 0;
+}
+
+#incident-log li {
+    background: #ffcccc;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
