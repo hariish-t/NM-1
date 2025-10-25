@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Monitoring Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Website Monitoring Dashboard</h1>
+  <div class="container">
+    <h1>Resume Builder</h1>
+    <div class="builder">
+      <!-- Form Section -->
+      <form id="resumeForm">
+        <h2>Personal Details</h2>
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="text" id="phone" placeholder="Phone Number" required />
+        <textarea id="address" placeholder="Address"></textarea>
 
-        <div class="input-section">
-            <label for="website-url">Enter Website URL:</label>
-            <input type="text" id="website-url" placeholder="https://example.com">
-            <button id="start-btn">Start Monitoring</button>
-        </div>
+        <h2>Education</h2>
+        <textarea id="education" placeholder="Enter your education details..."></textarea>
 
-        <div class="status-section">
-            <p>Status: <span id="status">N/A</span></p>
-            <p>Response Time: <span id="response-time">N/A</span></p>
-            <p>Uptime Percentage: <span id="uptime">0%</span></p>
-        </div>
+        <h2>Skills</h2>
+        <textarea id="skills" placeholder="List your skills (comma-separated)..."></textarea>
 
-        <div class="chart-container">
-            <h3>Response Time Chart</h3>
-            <canvas id="responseChart"></canvas>
-        </div>
+        <h2>Experience</h2>
+        <textarea id="experience" placeholder="Enter your work experience..."></textarea>
 
-        <div class="log-section">
-            <h3>Incident Log</h3>
-            <ul id="incident-log"></ul>
-        </div>
+        <button type="button" id="generateBtn">Generate Resume</button>
+      </form>
+
+      <!-- Resume Display Section -->
+      <div id="resumeOutput" class="resume hidden">
+        <h2 id="r_name"></h2>
+        <p><strong>Email:</strong> <span id="r_email"></span></p>
+        <p><strong>Phone:</strong> <span id="r_phone"></span></p>
+        <p><strong>Address:</strong> <span id="r_address"></span></p>
+
+        <hr />
+
+        <h3>Education</h3>
+        <p id="r_education"></p>
+
+        <h3>Skills</h3>
+        <ul id="r_skills"></ul>
+
+        <h3>Experience</h3>
+        <p id="r_experience"></p>
+      </div>
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
